@@ -4,4 +4,21 @@ const predictions = ["He will be too intent on doing anything. Relax and allow y
 "Office politics could be the cause of an unpleasant situation today. Home activities will give you more satisfaction than social life.", "Try not to feel blue. You may not be sure what a loved one expects of you. Progress on a task. Make home life."]
 
 
+const horoscope = () => {
+    let randomFeeling = Math.floor(Math.random() * 7);
+    let randomPred = Math.floor(Math.random() * 11);
+    let feel;
+    let dailyPrediction;
+    let mixedMessage;
+    
+    for(let i = 0; i < feelings.length; i++){
+        feel = feelings[randomFeeling]
 
+        for(let j =0; j < predictions.length; j++){
+            dailyPrediction = predictions[randomPred]
+        }
+    }
+    return mixedMessage = `You are feeling ${feel}; and your daily horoscope is: ${dailyPrediction}`
+}
+
+console.log(horoscope())
